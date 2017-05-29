@@ -1,8 +1,10 @@
 # Qt-based-p2pClientDiscovery
 Qt based network discovery service for 2p2 clients
 
+add "QT += network to your project file"
 
 Network class provides following signals/slots & functions
+
      signal: void clientGotInactive(QHostAddress address);
              returns QHostAddress of client, who got
              inactive due to timeout/no response
