@@ -3,7 +3,7 @@ Qt based network discovery service for 2p2 clients
 
 
 Network class provides following signals/slots & functions
-     signal: void clientGotInactive(QHostAddress address)
+     signal: void clientGotInactive(QHostAddress address);
              returns QHostAddress of client, who got
              inactive due to timeout/no response
     
