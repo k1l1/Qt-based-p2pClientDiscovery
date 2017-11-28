@@ -3,7 +3,7 @@ Network::Network(QString identityMessage,QObject *parent, int port, int broadcas
 { 
     qRegisterMetaType<QHostAddress>("QHostAddress");
 
-    //creates Thread for UDP and moves thread to QObject
+    //creates Thread for UDP and moves QObject to thread
     udpThread = new QThread;
     udp = new MyUDP(identityMessage,0, port, broadcastInterval, timeoutInterval);
     udp->moveToThread(udpThread);
